@@ -1,0 +1,27 @@
+<p>
+  这是第{{this.hero.id}}个英雄，名称为{{this.hero.name}}!!
+</p>
+
+<div *ngIf="selectHero">
+    <label>第{{selectHero.id}}个英雄的名称--name:
+      <input [(ngModel)]="selectHero.name" placeholder="name">
+    </label>
+</div>
+
+<h2>测试ngFor</h2>
+<table>
+	<tr>
+	    <th><input type='checkbox'></th>
+		<th>编号</th>
+		<th>姓名</th>
+	</tr>
+	<tr *ngFor="let item of heros;let i = index;" [class.selected]="item===selectHero" [ngStyle]="{'background-color':i%2==0?'#FFFFFF':'#ddffff'}">
+		<td><input type='checkbox' (click)="selectItem(item, !item.selected)"></td>
+		<td>{{item.id}}</td>
+		<td><a routerLink="/detail/{{item.id}}">{{item.name}}</a></td>
+	</tr>
+</table>
+
+<!--展示选择的英雄详情-->
+<!--<app-my-hero-detail [selectHero]="selectHero"></app-my-hero-detail> -->
+

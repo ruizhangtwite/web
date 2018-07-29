@@ -1,0 +1,7 @@
+<div *ngIf="selectHero">
+    <label>第{{selectHero.id}}个英雄的名称name:
+      <input [(ngModel)]="selectHero.name" placeholder="name">
+    </label>
+</div>
+
+<button (click)="goBack()">go back</button>
