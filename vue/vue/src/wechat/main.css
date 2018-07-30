@@ -1,0 +1,21 @@
+.textGray {
+    color: #929292;
+}
+
+.textBlue {
+    color: #37AEFF;
+}
+
+.defaultBtn {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mint-cell-value input {
+    text-align: left;
+}
+
+
+.mint-field .mint-cell-title {
+    width: 115px;
+}

@@ -1,0 +1,275 @@
+{
+  "category": {
+    "group": [
+      {
+        "dao": "CommentDAO",
+        "id": "1073",
+        "name": "整体评价",
+        "icon": "icon_pingjia_zu",
+        "flag": "0",
+        "child": [
+          {
+            "id": "1091",
+            "guid": "1",
+            "name": "区域",
+            "icon": "icon_supervisor_small",
+            "flag": "0",
+            "condition": {
+              "type": "date",
+              "fieldname": "createtime",
+              "text": "上报时间"
+            },
+            "xAxis": "人员",
+            "yAxis": "监督员上报数,监督员有效上报数",
+            "peggingQueryFields": "监督员上报数,监督员有效上报数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1092",
+            "guid": "1",
+            "name": "类型",
+            "icon": "icon_supervisor_small",
+            "flag": "0",
+            "condition": {
+              "type": "date",
+              "fieldname": "createtime",
+              "text": "上报时间"
+            },
+            "xAxis": "人员",
+            "yAxis": "监督员上报数,监督员有效上报数",
+            "peggingQueryFields": "监督员上报数,监督员有效上报数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1093",
+            "guid": "1",
+            "name": "来源",
+            "icon": "icon_supervisor_small",
+            "flag": "0",
+            "condition": {
+              "type": "date",
+              "fieldname": "createtime",
+              "text": "上报时间"
+            },
+            "xAxis": "人员",
+            "yAxis": "监督员上报数,监督员有效上报数",
+            "peggingQueryFields": "监督员上报数,监督员有效上报数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          }
+        ]
+      },
+      {
+        "dao": "UniStatDAO",
+        "id": "1018",
+        "name": "高发统计",
+        "icon": "icon_gaofa_zu",
+        "flag": "1",
+        "child": [
+          {
+            "id": "1010",
+            "guid": "1",
+            "name": "问题分类（部件）",
+            "icon": "icon_highrec_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "小类",
+            "yAxis": "上报数,立案数,应结案数,结案数,作废数",
+            "peggingQueryFields": "上报数,立案数,应结案数,结案数,作废数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1028",
+            "guid": "1",
+            "name": "问题分类（事件）",
+            "icon": "icon_highrec_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "小类",
+            "yAxis": "上报数,立案数,应结案数,结案数,作废数",
+            "peggingQueryFields": "上报数,立案数,应结案数,结案数,作废数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1015",
+            "guid": "1",
+            "name": "事件高发TOP5",
+            "icon": "icon_highrec_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "小类",
+            "yAxis": "上报数,立案数,应结案数,结案数,作废数",
+            "peggingQueryFields": "上报数,立案数,应结案数,结案数,作废数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1016",
+            "guid": "1",
+            "name": "部件高发TOP5",
+            "icon": "icon_highrec_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "小类",
+            "yAxis": "上报数,立案数,应结案数,结案数,作废数",
+            "peggingQueryFields": "上报数,立案数,应结案数,结案数,作废数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          }
+        ]
+      },
+      {
+        "dao": "CommentDAO",
+        "id": "1019",
+        "name": "区域评价",
+        "icon": "icon_quyu_zu",
+        "flag": "1",
+        "child": [
+          {
+            "id": "1029",
+            "guid": "1",
+            "name": "城区",
+            "icon": "icon_region_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "区域",
+            "yAxis": "上报数,立案数,处置数,结案数",
+            "peggingQueryFields": "上报数,采集员上报数,公众举报登记数,应立案数,立案数,应处置数,处置数,按期处置数,应结案数,结案数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1030",
+            "guid": "1",
+            "name": "街道",
+            "icon": "icon_region_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "街道",
+            "yAxis": "上报数,立案数,处置数,结案数",
+            "peggingQueryFields": "上报数,采集员上报数,公众举报登记数,应立案数,立案数,应处置数,处置数,按期处置数,应结案数,结案数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1032",
+            "guid": "1",
+            "name": "万米单元",
+            "icon": "icon_region_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "xAxis": "社区",
+            "yAxis": "上报数,立案数,处置数,结案数",
+            "peggingQueryFields": "上报数,采集员上报数,公众举报登记数,应立案数,立案数,应处置数,处置数,按期处置数,应结案数,结案数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          },
+          {
+            "id": "1033",
+            "guid": "1",
+            "name": "责任网格",
+            "icon": "icon_region_small",
+            "flag": "0",
+            "condition": [
+              {
+                "type": "date",
+                "fieldname": "createtime",
+                "text": "上报时间"
+              },
+              {
+                "type": "district",
+                "fieldname": "districtname,streetname,communityname",
+                "text": "区域"
+              }
+            ],
+            "yAxis": "上报数,立案数,处置数,结案数",
+            "peggingQueryFields": "上报数,采集员上报数,公众举报登记数,应立案数,立案数,应处置数,处置数,按期处置数,应结案数,结案数",
+            "chartType": "MSColumn3D",
+            "chartTypeScroll": "ScrollColumn2D"
+          }
+        ]
+      }
+    ]
+  }
+}

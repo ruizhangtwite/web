@@ -1,0 +1,55 @@
+.sl .item {
+    padding: 10px;
+    border: none;
+    background: #eee
+}
+
+.sl .sectionDate {
+    background: #dddddd;
+    padding: 10px;
+    color: #666666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sl .salelogContainer {
+    background: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sl .stage {
+    padding: 0;
+    color: #555
+}
+
+.sl .logContent {
+    padding: 5px 10px 10px 10px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+.sl #topSalelogListBg {
+    width: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-color: white;
+    color: white;
+    padding: 35px 10px 30px 10px;
+}
+
+.sl .sectionEmpty {
+    padding: 20px 0px;
+    text-align: center;
+    color: #555555;
+    margin-top: 10px;
+}
+
+.sl div.center {
+    display: block;
+    text-align: center;
+}
+
+.sl .row {
+    padding: 10px 10px 0px 10px;
+}

@@ -1,0 +1,28 @@
+.apply {
+    padding: 5px;
+    background-color: white;
+}
+
+.apply .row {
+    padding: 5px;
+}
+
+.apply .col {
+    padding: 0;
+}
+
+.apply .delete {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #5BB1FA;
+    cursor: pointer;
+}
+
+.apply .verifyButton {
+    color: #5bb1fa;
+    margin-left: 10px;
+}
+
+.apply .checkContent {
+    word-break: break-all
+}

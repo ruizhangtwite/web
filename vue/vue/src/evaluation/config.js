@@ -1,0 +1,9 @@
+const DATE_TYPE_DAY = 0
+const DATE_TYPE_WEEK = 1
+const DATE_TYPE_MONTH = 2
+
+export {
+    DATE_TYPE_DAY,
+    DATE_TYPE_MONTH,
+    DATE_TYPE_WEEK
+}
